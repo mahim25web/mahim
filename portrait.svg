@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait of Mahim Ahmmad</title>
+  <desc id="desc">A stylized technical portrait with a dark background and gold and teal accents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c2330"/>
+      <stop offset="1" stop-color="#11151c"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b3545"/>
+      <stop offset="1" stop-color="#151b25"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c98f76"/>
+      <stop offset="1" stop-color="#8d554d"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#c9a227" stroke-opacity=".16"/>
+    </pattern>
+  </defs>
+  <rect width="720" height="900" fill="url(#bg)"/>
+  <rect width="720" height="900" fill="url(#grid)"/>
+  <path d="M48 720H672M48 768H672M96 48V852M624 48V852" fill="none" stroke="#55d6be" stroke-opacity=".28"/>
+  <circle cx="360" cy="330" r="196" fill="#11151c" stroke="#c9a227" stroke-opacity=".65" stroke-width="3"/>
+  <path d="M160 900C174 712 232 624 360 606C488 624 546 712 560 900Z" fill="url(#coat)" stroke="#c9a227" stroke-opacity=".7" stroke-width="3"/>
+  <path d="M276 580L360 672L444 580V500H276Z" fill="url(#skin)"/>
+  <path d="M245 292C268 190 465 177 486 310L468 456C448 545 395 596 360 596C325 596 272 545 252 456Z" fill="url(#skin)"/>
+  <path d="M242 326C226 222 299 144 394 165C459 178 494 224 483 324L440 280C404 302 351 306 292 280Z" fill="#171b25"/>
+  <path d="M292 386Q318 370 341 386M379 386Q402 370 428 386" fill="none" stroke="#11151c" stroke-width="12" stroke-linecap="round"/>
+  <path d="M360 394V456L337 466" fill="none" stroke="#6f403d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M316 500Q360 524 404 500" fill="none" stroke="#11151c" stroke-width="9" stroke-linecap="round"/>
+  <path d="M278 660L360 744L442 660" fill="none" stroke="#55d6be" stroke-opacity=".7" stroke-width="4"/>
+  <path d="M260 900L310 712L360 760L410 712L460 900" fill="none" stroke="#ede7da" stroke-opacity=".18" stroke-width="2"/>
+  <circle cx="92" cy="108" r="7" fill="#c9a227"/>
+  <circle cx="628" cy="792" r="7" fill="#55d6be"/>
+  <text x="48" y="830" fill="#c9a227" font-family="monospace" font-size="16" letter-spacing="4">MA / 001</text>
+</svg>

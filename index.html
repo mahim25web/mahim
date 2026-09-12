@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mahim Ahmmad — Web Developer</title>
+<meta name="description" content="Mahim Ahmmad, web developer in Dhaka building clean, user-friendly websites with React, Firebase and modern front-end tooling." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hud-overlay" aria-hidden="true">
+  <div class="hud-corner top-left"></div>
+  <div class="hud-corner top-right"></div>
+  <div class="hud-corner bottom-left"></div>
+  <div class="hud-corner bottom-right"></div>
+  <div class="hud-scanline"></div>
+  <div class="hud-coords">LAT: 23.8103° N <br> LNG: 90.4125° E</div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Mahim <em>Ahmmad</em></a>
+    <nav class="links">
+      <a href="#about">Profile</a>
+      <a href="#stack">Stack</a>
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="hero-role">Web Developer, Dhaka</p>
+      <h1>Md. Mahim<span class="last">Ahmmad</span></h1>
+      <p class="hero-summary">Aspiring web developer with a strong foundation in digital design, branding and visual marketing — building clean, user-friendly websites by pairing creative direction with modern front-end principles.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#contact">Get in touch</a>
+        <a class="ghost" href="mailto:mahimahmmad7725@gmail.com">mahimahmmad7725@gmail.com</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="frame">
+        <img src="data:image/jpeg;base64,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" alt="Portrait of Mahim Ahmmad" />
+        <span class="tag">BUBT, Dhaka</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <p class="kicker">Profile</p>
+    <h2 class="section-title" data-scramble>Grounded in design, built for the browser.</h2>
+    <div class="about-grid">
+      <p class="about-lead">Currently completing a B.Sc. in Computer Science &amp; Engineering at Bangladesh University of Business &amp; Technology, expected 2026. The work centres on front-end craft — turning a design brief into something fast, legible and easy to use, with a growing focus on the systems underneath it: auth, data and AI-assisted features.</p>
+      <div class="note">
+        <h3>Based in Dhaka, Bangladesh</h3>
+        <p>Available for freelance web projects, internships and collaborations — remote or on the ground in Dhaka.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <p class="kicker">Stack</p>
+    <h2 class="section-title" data-scramble>The tools this gets built with.</h2>
+    <p class="stack-list">
+      <span>HTML5</span><span class="dot">·</span><span>CSS</span><span class="dot">·</span><span>Tailwind CSS</span><span class="dot">·</span><span>JavaScript</span><span class="dot">·</span><span>React.js</span><span class="dot">·</span><span>Firebase</span><span class="dot">·</span><span>Auth</span><span class="dot">·</span><span>AI-assisted development</span>
+    </p>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <p class="kicker">Work</p>
+    <h2 class="section-title" data-scramble>Recent work.</h2>
+    <div class="role-entry">
+      <div class="role-date">2026 — Present</div>
+      <div class="role-body">
+        <h3>Web Development &amp; Tech Solutions</h3>
+        <span class="role-org">Novus</span>
+        <p>Focused on modern web application design, front-end software solutions and digital tech implementation — from first concept through to a working, deployed product.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <p class="kicker">Projects</p>
+    <h2 class="section-title" data-scramble>Things that shipped.</h2>
+
+    <div class="role-entry">
+      <div class="role-date">Agency</div>
+      <div class="role-body">
+        <h3>BitX Labs</h3>
+        <p>A software engineering studio built around full-stack web apps, mobile builds and cloud architecture — its own site doubles as a working showcase of the stack and process behind it.</p>
+        <a class="role-org" href="https://bitxlabs.vercel.app" target="_blank" rel="noopener">bitxlabs.vercel.app</a>
+      </div>
+    </div>
+
+    <div class="role-entry">
+      <div class="role-date">EdTech Platform</div>
+      <div class="role-body">
+        <h3>Novus — Student Portal</h3>
+        <p>An exam-prep portal for school and college batches — live classes, mock quizzes, a resource library, and an AI study hub for doubt-solving, quiz generation and summarising, backed by a full admin panel for managing batches and content.</p>
+        <a class="role-org" href="https://novus-edu.vercel.app" target="_blank" rel="noopener">novus-edu.vercel.app</a>
+      </div>
+    </div>
+
+    <div class="role-entry">
+      <div class="role-date">Real-time App</div>
+      <div class="role-body">
+        <h3>PairChat</h3>
+        <p>A private messenger built for exactly two people — share a room ID and talk one-to-one, with no group threads, feeds or extra noise to manage.</p>
+        <a class="role-org" href="https://pair-chat-beta.vercel.app" target="_blank" rel="noopener">pair-chat-beta.vercel.app</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <p class="kicker">Education</p>
+    <h2 class="section-title" data-scramble>Academic background.</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date">2022 — Present · Expected graduation 2026</div>
+        <h3>Bangladesh University of Business &amp; Technology</h3>
+        <span class="tl-sub">B.Sc. in Computer Science &amp; Engineering</span>
+        <ul>
+          <li>Key coursework: Web Engineering, Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">Graduated 2024</div>
+        <h3>Birshreshtha Munshi Abdur Rouf Public College</h3>
+        <span class="tl-sub">Higher Secondary Certificate (HSC) — Science</span>
+        <ul>
+          <li>Passed with GPA 5.00, high academic standing.</li>
+          <li>Active member, College Science &amp; Programming Club.</li>
+          <li>Participated in inter-college ICT and Math Olympiads.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-wrap">
+      <div>
+        <p class="kicker">Contact</p>
+        <h2 class="section-title" data-scramble>Let's build something.</h2>
+        <p>Open to freelance work, internships, and anything that needs a careful front end. The fastest way to reach me is email or a message on LinkedIn.</p>
+      </div>
+      <ul class="contact-list">
+        <li><a href="mailto:mahimahmmad7725@gmail.com"><span>mahimahmmad7725@gmail.com</span><span class="label">Email</span></a></li>
+        <li><a href="tel:+8801540185272"><span>+880 1540‑185272</span><span class="label">Phone</span></a></li>
+        <li><a href="https://github.com/mahim25web" target="_blank" rel="noopener"><span>github.com/mahim25web</span><span class="label">GitHub</span></a></li>
+        <li><a href="https://www.linkedin.com/in/md-mahim-ahmmad-29a1b6411" target="_blank" rel="noopener"><span>LinkedIn</span><span class="label">Profile</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap footer-wrap">
+    <span>Md. Mahim Ahmmad — Dhaka, Bangladesh</span>
+    <span>&copy; 2026</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
